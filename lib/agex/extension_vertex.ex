@@ -6,7 +6,7 @@ defmodule Agex.Extension.Vertex do
   require Logger
 
   @moduledoc """
-  
+
   """
 
   def init(opts) do
@@ -59,8 +59,8 @@ defmodule Agex.Extension.Vertex do
         [label, gid, props] ->
           # vertex
           %Agex.Vertex{
-            label: label, 
-            gid: GraphId.decode_elixir(gid), 
+            label: label,
+            gid: GraphId.decode_elixir(gid),
             props: Jason.decode!(props)}
 
         _ ->

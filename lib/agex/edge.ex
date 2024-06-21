@@ -1,6 +1,6 @@
 defmodule Agex.Edge do
   @moduledoc """
-  
+
   """
 
   defstruct start_gid: nil, end_gid: nil, gid: nil, label: "", props: %{}

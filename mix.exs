@@ -5,7 +5,7 @@ defmodule Agex.MixProject do
     [
       app: :agex,
       version: "0.1.1",
-      elixir: "~> 1.10",
+      elixir: "~> 1.14",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -40,8 +40,8 @@ defmodule Agex.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:jason, "~> 1.1"},
-      {:postgrex, "~> 0.15.5"},
+      {:jason, "~> 1.2"},
+      {:postgrex, ">= 0.0.0"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
       # {:dep_from_hexpm, "~> 0.3.0"},
