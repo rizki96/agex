@@ -1,5 +1,5 @@
 defmodule Agex.GraphId do
-  use Bitwise
+  import Bitwise
   defstruct lab_id: 0, loc_id: 0
   @type t :: %__MODULE__{lab_id: Integer.t(), lab_id: Integer.t()}
 
